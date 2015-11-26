@@ -22,8 +22,8 @@ def tags(docs=False):
             dst = cwd / (name+".py")
             print "Kopiuje ", src, " do ", dst
             copy(unicode(src), unicode(dst))
-        run('git commit -am '+tag)
-        run('git tag -f '+tag)
+        run('git commit -am '+tag, warn=True)
+        run('git tag -f '+tag, warn=True)
         sleep(1)  # Git psuje ścieżki powiązań jeśli operacje są zbyt blisko siebie
 
 
