@@ -3,13 +3,12 @@
 
 import pylab
 
-a = 1
-b = 2
+a = int(raw_input('Podaj współczynnik a: '))
+b = int(raw_input('Podaj współczynnik b: '))
 x = range(-10, 11)  # lista argumentów x
 
-y = []  # lista wartości
-for i in x:
-    y.append(a * i + b)
+# wyrażenie listowe wylicza dziedzinę y
+y = [a * i + b for i in x]  # lista wartości
 
 pylab.plot(x, y)
 pylab.title('Wykres f(x) = a*x - b')
