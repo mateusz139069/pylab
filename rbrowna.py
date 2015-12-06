@@ -24,7 +24,7 @@ print wsp_x, wsp_y
 # oblicz wektor końcowego przesunięcia
 s = np.fabs(np.sqrt(x**2 + y**2))
 print "Wektor przesunięcia:", s
-
+plt.plot((0, wsp_x[-1]), (0, wsp_y[-1]), color="blue")
 plt.plot(wsp_x, wsp_y, "o:", color="green", linewidth="3", alpha=0.5)
 plt.legend(["Dane x, y\nPrzemieszczenie: " + str(s)], loc="upper left")
 plt.xlabel("Wsp_x")
