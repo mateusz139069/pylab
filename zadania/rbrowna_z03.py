@@ -25,7 +25,7 @@ print wsp_x, wsp_y
 s = np.fabs(np.sqrt(x**2 + y**2))
 print "Wektor przesunięcia:", s
 
-plt.plot(wsp_x, wsp_y, "o:", color="green", linewidth="3", alpha=0.5)
+plt.plot(wsp_x, wsp_y, "o:", color="blue", linewidth="5", alpha=0.7)
 plt.legend(["Dane x, y\nPrzemieszczenie: " + str(s)], loc="upper left")
 plt.xlabel("Wsp_x")
 plt.ylabel("Wsp_y")
